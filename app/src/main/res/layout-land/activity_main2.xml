@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fondob">
+
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fraccion 1"
+            android:id="@+id/textView"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:id="@+id/linearLayout">
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="10dp"
+                />
+
+            <EditText
+                android:layout_width="50dp"
+                android:background="@drawable/fondo"
+                android:layout_height="50dp"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/txtNumerador1"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center" />
+            <View
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                />
+
+            <View
+                android:layout_width="100dp"
+                android:layout_height="1dp"
+                android:background="#000"/>
+            <View
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                />
+
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/txtDenominador1"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/fondo"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fraccion 2"
+            android:id="@+id/textView2"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textView3"
+            android:layout_toEndOf="@+id/textView3" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout2"
+            android:layout_alignTop="@+id/linearLayout"
+            android:layout_toRightOf="@+id/textView3"
+            android:layout_toEndOf="@+id/textView3">
+            <View
+                android:layout_width="5dp"
+                android:layout_height="10dp"
+                />
+
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:ems="10"
+                android:background="@drawable/fondo"
+                android:id="@+id/txtNumerador2"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center" />
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                />
+
+            <View
+                android:layout_width="100dp"
+                android:layout_height="1dp"
+                android:background="#000"/>
+            <View
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                />
+
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/txtDenominador2"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/fondo"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resultado"
+            android:id="@+id/textView3"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout4"
+            android:gravity="left"
+            android:layout_below="@id/textView3">
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="10dp"
+                />
+
+
+
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/txtNumRes"
+                android:layout_gravity="center_horizontal"
+                android:autoText="false"
+                android:editable="false"
+                android:clickable="true"
+                android:background="@drawable/fondo"
+                android:enabled="true"
+                android:layout_below="@+id/textView3"/>
+
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                />
+
+            <View
+                android:layout_width="100dp"
+                android:layout_height="1dp"
+                android:background="#000"/>
+            <View
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                />
+
+
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/txtDemRes"
+                android:layout_gravity="center_horizontal"
+                android:editable="false"
+                android:background="@drawable/fondo"
+                android:clickable="true"
+                android:enabled="true" />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="20dp"
+        android:layout_height="20dp"/>
+
+    <View
+        android:layout_gravity="center"
+        android:layout_width="450dp"
+        android:layout_height="5dp"
+        android:background="#000"/>
+
+    <View
+        android:layout_width="20dp"
+        android:layout_height="20dp"/>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/linearLayout3"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        >
+
+        <Button
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:id="@+id/btnSumar"
+            android:layout_alignTop="@+id/btnMultiplicar"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/boton"/>
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="10dp"
+            />
+
+
+        <Button
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:id="@+id/btnRestar"
+            android:layout_alignTop="@+id/btnDividir"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/boton"/>
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="10dp"
+            />
+
+        <Button
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:text="x"
+            android:id="@+id/btnMultiplicar"
+            android:layout_alignTop="@+id/btnDividir"
+            android:layout_toRightOf="@+id/btnSumar"
+            android:layout_toEndOf="@+id/btnSumar"
+            android:background="@drawable/boton"/>
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="10dp"
+            />
+
+        <Button
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:id="@+id/btnDividir"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btnRestar"
+            android:layout_toStartOf="@+id/btnRestar"
+            android:background="@drawable/boton"/>
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="10dp"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Simplificar"
+            android:id="@+id/btnSimplificar"
+            android:background="@drawable/boton"/>
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="10dp"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Borrar"
+            android:id="@+id/btnBorrar"
+            android:background="@drawable/boton"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="20dp"
+        android:layout_height="20dp"/>
+
+    <View
+        android:layout_gravity="center"
+        android:layout_width="450dp"
+        android:layout_height="5dp"
+        android:background="#000"/>
+
+    <View
+        android:layout_width="20dp"
+        android:layout_height="20dp"/>
+
+
+</LinearLayout>
